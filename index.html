@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신동민 1주년 & 생일 축하</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <!-- Page 1: 신동민을 위한 HTML -->
+        <div id="page-1">
+            <h1>💌 신동민을 위한 HTML!</h1>
+            <p>버튼을 눌러주세요.</p>
+            <button onclick="goToPage('page-2')">다음</button>
+        </div>
+        
+        <!-- Page 2: 우리의 1주년 -->
+        <div id="page-2" class="hidden">
+            <h1>🎉 2024.11.23 우리의 1주년을 축하합니다! 🎉</h1>
+            <button onclick="goToPage('page-3')">계속</button>
+        </div>
+        
+        <!-- Page 3: 1주년 메시지 -->
+        <div id="page-3" class="hidden">
+            <p>안녕 오빵! 벌써 우리 1주년이다! 💕</p>
+            <p>시간 진짜 빨라... 항상 같이 있어서 그런지 더 빠르게 느껴지는 것 같아 ㅠㅠ.</p>
+            <p>작년 건대에서 방어 먹었던 게 엊그제 같은데 벌써 우리 1년만에 가족 같아졌어 😊.</p>
+            <p>우리 얼른 취업해서 더 큰 집에서 더 행복하게 살자! 사랑해 ❤️</p>
+            <button onclick="goToPage('page-4')">계속?</button>
+        </div>
+
+        <!-- Page 4: 동민이의 생일 축하 -->
+        <div id="page-4" class="hidden">
+            <h1>🎂 동민이의 생일을 축하합니다~! 🎂</h1>
+            <button onclick="goToPage('page-5')">계속하시려면 눌러주세요</button>
+        </div>
+
+        <!-- Page 5: 안내 메시지 -->
+        <div id="page-5" class="hidden">
+            <p>오빠 안뇽? 이번에 HTML 배우면서 이런 이벤트를 준비해봤어!</p>
+            <p>처음이라 부족하지만 양해 부탁해~ 나중엔 더 예쁘게 만들어줄게!</p>
+            <p>그리고 우리 사진도 많이 찍어서 더 풍성하게 만들어보자! ❤️</p>
+            <button onclick="goToPage('page-6')">계속</button>
+        </div>
+
+        <!-- Page 6: 선물 질문 -->
+        <div id="page-6" class="hidden">
+            <h2>Q1. 동민이가 원하는 선물은 ~?</h2>
+            <button onclick="goToPage('page-7-1')">정성스럽게 쓴 편지</button>
+            <button onclick="goToPage('page-7-2')">ㅎㅎ 그래도 선물은 받아야지 ^^</button>
+        </div>
+
+        <!-- Page 7-1: 편지 선택 -->
+        <div id="page-7-1" class="hidden">
+            <p>편지를 고르신 당신! 예쁜 마음에 한 번의 기회를 더 드리겠습니다.</p>
+            <button onclick="goToPage('page-8')">기회 받으러 가기</button>
+        </div>
+
+        <!-- Page 7-2: 선물 선택 -->
+        <div id="page-7-2" class="hidden">
+            <p>선물을 고르신 당신! 편지는 진정 필요 없으신가요? 😏</p>
+            <button onclick="goToPage('page-7-2-1')">필요해요 ㅠㅠ 제발 주세요 ㅜㅜ</button>
+            <button onclick="goToPage('page-7-2-2')">넵 ㅋ 전 선물만 있으면 됩니다. ㅋ</button>
+        </div>
+
+        <!-- Page 7-2-1: 편지 결과 -->
+        <div id="page-7-2-1" class="hidden">
+            <p>역시 필요했군요 ~ 드리겠습니다 ㅋ</p>
+            <button onclick="goToPage('page-8')">계속</button>
+        </div>
+
+        <!-- Page 7-2-2: 게임 오버 -->
+        <div id="page-7-2-2" class="hidden">
+            <p>당신은 Game Over입니다. 땅땅땅!</p>
+        </div>
+
+        <!-- Page 8: 선물 선택 -->
+        <div id="page-8" class="hidden">
+            <h2>선물을 어떤 걸 받고 싶으신가요?</h2>
+            <button onclick="goToPage('gift-1')">전기면도기</button>
+            <button onclick="goToPage('gift-2')">따수운 옷</button>
+            <button onclick="goToPage('gift-3')">신발</button>
+            <button onclick="goToPage('gift-4')">목도리</button>
+        </div>
+
+        <!-- Gift Pages -->
+        <div id="gift-1" class="hidden">
+            <p>오빠 전기면도기가 고장나서 준비했어! 😊</p>
+            <button onclick="goToPage('page-9')">계속</button>
+        </div>
+        <div id="gift-2" class="hidden">
+            <p>옷은 오빠랑 같이 골라서 이쁜 걸로 사러 가자! 🛍️</p>
+            <button onclick="goToPage('page-9')">계속</button>
+        </div>
+        <div id="gift-3" class="hidden">
+            <p>신발도 함께 사러 가서 이쁜 거 골라보자! 👟</p>
+            <button onclick="goToPage('page-9')">계속</button>
+        </div>
+        <div id="gift-4" class="hidden">
+            <p>목도리는 우리 커플로 맞춰볼까? ❤️</p>
+            <button onclick="goToPage('page-9')">계속</button>
+        </div>
+
+        <!-- Page 9: 최종 메시지 -->
+        <div id="page-9" class="hidden">
+            <h1>한 주밖에 안 배웠지만 정성껏 준비했어! 사랑해 ❤️</h1>
+            <p>이벤트 어땠어? 다음엔 더 멋지게 준비할게!</p>
+            <button onclick="goToPage('page-1')">처음으로</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
